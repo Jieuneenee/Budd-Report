@@ -14,25 +14,26 @@ const Container = styled.div`
 `;
 
 const Title = styled.h2`
-  font-size: 24px; // 제목 크기 설정
-  margin-bottom: 20px; // 제목 아래 여백 추가
+  font-size: 24px;
+  margin-bottom: 20px;
   margin-left: 25px;
 `;
 
 const Conclusion = styled.div`
-  text-align: center; // 텍스트 가운데 정렬
-  margin-top: 30px; // 위쪽 여백 추가
-  margin-right: 25px; // 오른쪽 여백 추가
-  font-size: 20px; // 폰트 크기 설정
-  font-weight: bold; // 폰트 굵기 설정
+  text-align: center;
+  margin-top: 30px;
+  margin-right: 25px;
+  font-size: 20px;
+  font-weight: bold;
+  margin-left: 20px;
 `;
 
 const From = styled.div`
-  text-align: right; // 텍스트 가운데 정렬
-  margin-top: 20px; // 위쪽 여백 추가
-  margin-right: 25px; // 오른쪽 여백 추가
-  font-size: 20px; // 폰트 크기 설정
-  font-weight: bold; // 폰트 굵기 설정
+  text-align: right;
+  margin-top: 20px;
+  margin-right: 25px;
+  font-size: 20px;
+  font-weight: bold;
 `;
 
 const Report = () => {

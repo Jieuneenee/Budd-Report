@@ -1,6 +1,20 @@
 import styled from "styled-components";
 import LogoIcon from "../assets/logo.png";
+import { createGlobalStyle } from "styled-components";
 import { Typography } from "antd";
+
+const GlobalStyle = createGlobalStyle`
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  html, body {
+    height: 100%;
+    overflow: hidden; // 원하지 않는 스크롤바가 생기지 않도록 설정
+  }
+`;
 
 const HeaderDiv = styled.div`
   background-color: #cad8ed;
@@ -42,6 +56,7 @@ const BuddTypo = styled(Typography)`
 const Header = () => {
   return (
     <>
+      <GlobalStyle />
       <HeaderDiv>
         <LogoImg src={LogoIcon} />
         <BuddTypo>BUDD</BuddTypo>
