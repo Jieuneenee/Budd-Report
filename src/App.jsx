@@ -1,14 +1,14 @@
-import { useState } from "react";
-import Report from "./pages/Report";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Report from "./pages/Report"; // Report 컴포넌트를 임포트합니다.
 
-function App() {
-  const [count, setCount] = useState(0);
-
+const App = () => {
   return (
-    <>
-      <Report />
-    </>
+    <Router>
+      <Routes>
+        <Route path="/report/:userId" element={<Report />} />{" "}
+      </Routes>
+    </Router>
   );
-}
+};
 
 export default App;
