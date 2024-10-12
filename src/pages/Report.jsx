@@ -5,7 +5,7 @@ import Contents from "../components/Contents";
 import Header from "../components/Header";
 import styled from "styled-components";
 
-const BASE_URL = process.env.REACT_APP_BASE_URL || "http://localhost:8080";
+const BASE_URL = "http://localhost:8080";
 
 const fetchUsers = async (userId, setUsers) => {
   try {
