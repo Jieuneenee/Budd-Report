@@ -10,6 +10,7 @@ const BASE_URL = "http://localhost:8080";
 const fetchUsers = async (userId, setUsers) => {
   try {
     const response = await axios.get(`${BASE_URL}/api/detail/${userId}/report`);
+    console.log(response.data);
     setUsers(response.data);
   } catch (error) {
     console.error("Error fetching users:", error);
