@@ -1,16 +1,11 @@
-import {
-  BrowserRouter as Router,
-  Route,
-  Routes,
-  Navigate,
-} from "react-router-dom";
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Report from "./pages/Report";
 
 const App = () => {
   return (
     <Router>
       <Routes>
-        <Route path="/report/:userId" element={<Report />} />{" "}
+        <Route path="/report/:userId/:month" element={<Report />} />
       </Routes>
     </Router>
   );
